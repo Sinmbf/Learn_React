@@ -1,0 +1,19 @@
+.form-control {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 2px solid #ffffff;
+}
+
+.search-icon {
+  background-color: #ffffff;
+  width: 3rem;
+  border: none;
+  padding: 0.5em;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.movie-img {
+  height: 30rem;
+}
