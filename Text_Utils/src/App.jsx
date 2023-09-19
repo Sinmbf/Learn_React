@@ -47,17 +47,18 @@ function App() {
         selectedIndex={selectedIndex}
         setSelectedIndex={setSelectedIndex}
       />
+      {/* Alert */}
+      <Alert
+        color="info"
+        display="block"
+        text="Recommended to save the text before making any changes!"
+      />
       {/* Text Area */}
       <div className="container my-5" style={{ minHeight: "55vh" }}>
         <div className="row justify-content-center">
           <div className="col-md-7 col-11">
             {selectedIndex === 0 && (
               <>
-                {/* Alert */}
-                <Alert
-                  color="info"
-                  text="Recommended to save the text before making any changes!"
-                />
                 <TextForm
                   heading="Enter the text to analyze"
                   placeHolder="Insert the text here"
