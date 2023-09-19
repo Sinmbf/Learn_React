@@ -1,11 +1,24 @@
 import { useState } from "react";
 import NewButton from "./NewButton";
 import PropTypes from "prop-types";
+import Alert from "./Alert";
 
 const TextForm = ({ heading, placeHolder }) => {
   const [text, setText] = useState("");
-  const [index, setIndex] = useState(0);
+  const [btnDisabled, setBtnDisabled] = useState(true);
+  const [display, setDisplay] = useState("none");
 
+  //Helper function to save the text
+  const saveText = () => {
+    if (text !== "") {
+      localStorage.setItem("Saved Text", text);
+      setBtnDisabled(false);
+      setDisplay("block");
+      setTimeout(() => {
+        setDisplay("none");
+      }, 2000);
+    }
+  };
   //Helper function to change text to uppercase
   const changeToUpperCase = () => {
     setText((currentText) => {
@@ -30,13 +43,13 @@ const TextForm = ({ heading, placeHolder }) => {
   };
   //Helper function to revert the text to normal
   const changeToNormal = () => {
-    setText(localStorage.getItem("First text"));
-    setIndex(0);
+    setText(localStorage.getItem("Saved Text"));
   };
   return (
     <>
       <h3 className="text-center mb-3 text-danger">{heading}</h3>
       <div className="mb-3 row justify-content-center">
+        {/* Text Area */}
         <textarea
           className="form-control h-75 mb-3 border border-2 border-dark"
           id="text-area"
@@ -44,40 +57,71 @@ const TextForm = ({ heading, placeHolder }) => {
           value={text}
           onChange={(e) => {
             setText(e.target.value);
-            if (index === 0 && e.target.value !== "") {
-              localStorage.setItem("First text", e.target.value);
-              setIndex(1);
-            }
           }}
           placeholder={placeHolder}></textarea>
+        {/* Text Summary */}
+        <div className="text-summary bg-dark text-light mb-4">
+          <h3>Your Text Summary</h3>
+          <p className="text-primary fw-bold">
+            Characters: {text.split("").length}
+            {"  "}
+            <span className="text-danger">(Including spaces)</span>
+          </p>
+          <p className="text-warning fw-bold">
+            Words:{" "}
+            {
+              text
+                .replace(/\n/g, " ")
+                .split(" ")
+                .filter((value) => value != "").length
+            }
+          </p>
+          <p className="text-info fw-bold">
+            Reading time:{" "}
+            {0.008 * text.split(" ").filter((element) => element != "").length}{" "}
+            mins
+          </p>
+        </div>
+
+        {/* Alert */}
+        <Alert color="success" text="Saved the text" display={display} />
+
+        {/* Buttons */}
         <NewButton
           type="button"
-          text="Convert to Uppercase"
+          color="success"
+          text="Save Text"
+          handleClick={saveText}
+        />
+        <NewButton
+          type="button"
           color="primary"
+          text="Convert to Uppercase"
           handleClick={changeToUpperCase}
         />
         <NewButton
           type="button"
-          text="Convert to LowerCase"
           color="secondary"
+          text="Convert to LowerCase"
           handleClick={changeToLowerCase}
         />
         <NewButton
           type="button"
+          color="danger"
           text="Remove white spaces"
-          color="success"
           handleClick={removeWhiteSpaces}
         />
         <NewButton
           type="button"
-          text="Remove the text"
           color="warning"
+          text="Remove the text"
           handleClick={removeText}
         />
         <NewButton
           type="button"
           text="Change to Normal"
           color="info"
+          state={btnDisabled}
           handleClick={changeToNormal}
         />
       </div>
