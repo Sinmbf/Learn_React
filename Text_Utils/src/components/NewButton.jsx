@@ -5,12 +5,12 @@ const NewButton = ({ type, color, text, handleClick, state }) => {
     <>
       <button
         type={type}
-        className={
-          "fs-5 btn btn-primary btn-sm col-11 col-lg-3 mx-3 my-2 p-2 btn-" +
-          color
-        }
+        className={`fs-5 btn btn-sm col-11 col-lg-3 mx-3 my-2 p-2 text-light ${
+          color === "black" && "btn-dark"
+        }`}
         disabled={state}
-        onClick={handleClick}>
+        onClick={handleClick}
+        style={{ backgroundColor: color !== "black" && color }}>
         {text}
       </button>
     </>

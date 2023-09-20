@@ -1,21 +1,16 @@
 import PropTypes from "prop-types";
 import NavItem from "./NavItem";
 
-const NavBar = ({
-  title,
-  selectedIndex,
-  setSelectedIndex,
-  styleTheme,
-  toggleTheme,
-  btnText,
-}) => {
+const NavBar = ({ title, selectedIndex, setSelectedIndex, theme }) => {
   const navItems = ["Home", "About"];
   // Helper function to change theme onClick
   return (
     <nav
-      className={`navbar navbar-expand-lg`}
+      className={`navbar navbar-expand-lg bg-${
+        theme.backgroundColor === "black" && "dark"
+      }`}
       data-bs-theme="dark"
-      style={styleTheme}>
+      style={theme}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           {title}
@@ -42,27 +37,6 @@ const NavBar = ({
               />
             ))}
           </ul>
-          {/* Toggle Theme Button */}
-          <div className="form-check form-switch">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              role="switch"
-              onClick={toggleTheme}
-              id="flexSwitchCheckDefault"
-              style={{ height: "2rem", width: "4rem", cursor: "pointer" }}
-            />
-            <label
-              className={
-                styleTheme.backgroundColor === "black"
-                  ? "text-light"
-                  : "text-black" + " form-check-label "
-              }
-              htmlFor="flexSwitchCheckDefault"
-              style={{ marginTop: ".4rem" }}>
-              {btnText}
-            </label>
-          </div>
         </div>
       </div>
     </nav>
@@ -73,9 +47,7 @@ NavBar.propTypes = {
   title: PropTypes.string.isRequired,
   selectedIndex: PropTypes.number,
   setSelectedIndex: PropTypes.func,
-  styleTheme: PropTypes.object,
-  toggleTheme: PropTypes.func,
-  btnText: PropTypes.string,
+  theme: PropTypes.object,
 };
 
 // Default propTypes

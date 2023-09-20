@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
-const Footer = ({ styleTheme }) => {
+const Footer = ({ theme }) => {
   return (
-    <footer className="py-3" style={styleTheme}>
+    <footer
+      className={`py-3 bg-${theme.backgroundColor === "black" ? "dark" : null}`}
+      style={theme}>
       <ul className="nav justify-content-center border-bottom pb-3 mb-3">
         <li className="nav-item">
           <a href="#" className="nav-link px-2 text-light">
@@ -35,7 +37,7 @@ const Footer = ({ styleTheme }) => {
 };
 
 Footer.propTypes = {
-  styleTheme: PropTypes.object,
+  theme: PropTypes.object,
 };
 
 export default Footer;

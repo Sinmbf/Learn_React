@@ -1,0 +1,52 @@
+.themeContainer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.themeBtn {
+  background: transparent;
+  border: transparent;
+  animation: rotate 4s linear infinite;
+}
+
+.themeBtn i {
+  font-size: 2rem;
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-right: 0.2rem;
+  width: 4rem;
+  margin-left: 0.2rem;
+  background: grey;
+  padding: 0.5em 2.6em;
+}
+
+.themes button {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: transparent;
+}
+
+@media only screen and (min-width: 600px) {
+  .themeContainer {
+    right: 0;
+    flex-direction: row-reverse;
+  }
+}
