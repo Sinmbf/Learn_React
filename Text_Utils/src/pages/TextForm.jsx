@@ -6,24 +6,24 @@ import Alert from "../components/Alert";
 const TextForm = ({ heading, placeHolder, theme }) => {
   document.title = "TextUtils - Home";
   const [text, setText] = useState("");
-  const [btnDisabled, setBtnDisabled] = useState(true);
-  const [display, setDisplay] = useState("none");
+  const [visibility, setVisibility] = useState("hidden");
   const [alertText, setAlertText] = useState("");
 
   // Helper function to show and hide alert
   const displayAlert = (alertText) => {
-    text !== "" && setDisplay("block");
-    setAlertText(alertText);
-    setTimeout(() => {
-      setDisplay("none");
-    }, 2000);
+    if (text !== "") {
+      setVisibility("visible");
+      setAlertText(alertText);
+      setTimeout(() => {
+        setVisibility("hidden");
+      }, 2000);
+    }
   };
 
   //Helper function to save the text
   const saveText = () => {
     if (text !== "") {
-      localStorage.setItem("Saved Text", text);
-      setBtnDisabled(false);
+      sessionStorage.setItem("Saved Text", text);
       displayAlert("Saved the text");
     }
   };
@@ -60,7 +60,7 @@ const TextForm = ({ heading, placeHolder, theme }) => {
   };
   //Helper function to revert the text to normal
   const changeToNormal = () => {
-    setText(localStorage.getItem("Saved Text"));
+    setText(sessionStorage.getItem("Saved Text"));
     displayAlert("Reverted the text back to original");
   };
   return (
@@ -116,50 +116,56 @@ const TextForm = ({ heading, placeHolder, theme }) => {
         </div>
 
         {/* Alert */}
-        <Alert color="success" text={alertText} display={display} />
+        <Alert color="success" text={alertText} visibility={visibility} />
 
         {/* Buttons */}
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Save Text"
+          state={text === ""}
           handleClick={saveText}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Convert to Uppercase"
+          state={text === ""}
           handleClick={changeToUpperCase}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Convert to LowerCase"
+          state={text === ""}
           handleClick={changeToLowerCase}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Remove extra spaces"
+          state={text === ""}
           handleClick={removeExtraSpaces}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Copy Text"
+          state={text === ""}
           handleClick={copyText}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
           text="Remove the text"
+          state={text === ""}
           handleClick={removeText}
         />
         <NewButton
           type="button"
           color={theme.btnColor}
-          text="Change to to normal"
-          state={btnDisabled}
+          text="Change to original text"
+          state={sessionStorage.getItem("Saved Text")?.length === undefined}
           handleClick={changeToNormal}
         />
       </div>

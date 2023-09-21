@@ -3,7 +3,6 @@ import "bootstrap/dist/js/bootstrap.js";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import TextForm from "./pages/TextForm";
-import Alert from "./components/Alert";
 import { useState, useEffect } from "react";
 import AboutSection from "./pages/AboutSection";
 import Footer from "./components/Footer";
@@ -73,13 +72,6 @@ function App() {
       />
       {/* Theme Button */}
       <ThemeContainer setThemeColor={setThemeColor} themes={themes} />
-
-      {/* Alert */}
-      <Alert
-        color="info"
-        display={selectedIndex === 0 ? "block" : "none"}
-        text="Recommended to save the text before making any changes"
-      />
 
       {/* Text Area */}
       <div className="container my-5" style={{ minHeight: "55vh" }}>

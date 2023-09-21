@@ -1,18 +1,15 @@
 import PropTypes from "prop-types";
-const Alert = ({ color, text, display }) => {
+const Alert = ({ color, text, visibility }) => {
   return (
     <div
       className={"alert alert-" + color + " alert-dismissible fade show"}
       role="alert"
-      style={{ display: display }}>
+      style={{
+        visibility: visibility,
+        height: "35px",
+        padding: "0.2em 0.5em",
+      }}>
       <strong> {text}</strong>
-      {color === "info" && (
-        <button
-          type="button"
-          className="btn-close"
-          data-bs-dismiss="alert"
-          aria-label="Close"></button>
-      )}
     </div>
   );
 };
@@ -20,7 +17,7 @@ const Alert = ({ color, text, display }) => {
 Alert.propTypes = {
   color: PropTypes.string,
   text: PropTypes.string,
-  display: PropTypes.string,
+  visibility: PropTypes.string,
 };
 
 export default Alert;
