@@ -92,7 +92,7 @@ function App() {
                 element={
                   <TextForm
                     heading="Enter the text to analyze"
-                    placeHolder="Insert"
+                    placeHolder="Insert the text here"
                     theme={theme}
                   />
                 }
