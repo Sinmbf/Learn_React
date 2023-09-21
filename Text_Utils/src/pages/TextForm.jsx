@@ -1,9 +1,10 @@
 import { useState } from "react";
-import NewButton from "./NewButton";
+import NewButton from "../components/NewButton";
 import PropTypes from "prop-types";
-import Alert from "./Alert";
+import Alert from "../components/Alert";
 
 const TextForm = ({ heading, placeHolder, theme }) => {
+  document.title = "TextUtils - Home";
   const [text, setText] = useState("");
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [display, setDisplay] = useState("none");

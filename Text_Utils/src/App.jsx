@@ -2,12 +2,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import TextForm from "./components/TextForm";
+import TextForm from "./pages/TextForm";
 import Alert from "./components/Alert";
 import { useState, useEffect } from "react";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./pages/AboutSection";
 import Footer from "./components/Footer";
 import ThemeContainer from "./components/ThemeContainer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -42,17 +43,9 @@ function App() {
   ];
   let styleTheme;
   themes.map((theme) => {
-    if (theme.backgroundColor === themeColor) {
-      styleTheme = theme;
-    }
+    theme.backgroundColor === themeColor && (styleTheme = theme);
   });
   // themeColor === "#0f2862" && (styleTheme = themes[0]);
-
-  // themeColor === "#ff8928" && (styleTheme = themes[1]);
-
-  // themeColor === "#ff1d58" && (styleTheme = themes[2]);
-
-  // themeColor === "black" && (styleTheme = themes[3]);
 
   const [theme, setTheme] = useState(styleTheme);
   useEffect(() => {
@@ -92,18 +85,29 @@ function App() {
       <div className="container my-5" style={{ minHeight: "55vh" }}>
         <div className="row justify-content-center">
           <div className="col-md-7 col-11">
-            {selectedIndex === 0 && (
-              <>
-                <TextForm
-                  heading="Enter the text to analyze"
-                  placeHolder="Insert the text here"
-                  theme={theme}
-                />
-              </>
-            )}
-            {selectedIndex === 1 && (
-              <AboutSection setSelectedIndex={setSelectedIndex} theme={theme} />
-            )}
+            <Routes>
+              <Route
+                exact
+                path="/"
+                element={
+                  <TextForm
+                    heading="Enter the text to analyze"
+                    placeHolder="Insert the text here"
+                    theme={theme}
+                  />
+                }
+              />
+              <Route
+                exact
+                path="/about"
+                element={
+                  <AboutSection
+                    setSelectedIndex={setSelectedIndex}
+                    theme={theme}
+                  />
+                }
+              />
+            </Routes>
           </div>
         </div>
       </div>

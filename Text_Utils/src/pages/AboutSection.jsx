@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import AccordionItem from "./AccordionItem";
+import AccordionItem from "../components/AccordionItem";
+import { Link } from "react-router-dom";
 
 // Accordion Items
 const accordionItem = [
@@ -22,6 +23,7 @@ const accordionItem = [
 
 // About Section
 const AboutSection = ({ setSelectedIndex, theme }) => {
+  document.title = "TextUtils - About";
   return (
     <>
       <div className="accordion" id="accordionExample">
@@ -44,7 +46,9 @@ const AboutSection = ({ setSelectedIndex, theme }) => {
             theme.backgroundColor !== "black" && theme.backgroundColor,
           color: "white",
         }}>
-        Get Started
+        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+          Get Started
+        </Link>
       </button>
     </>
   );

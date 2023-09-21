@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const NavItem = ({ title, index, selectedIndex, setSelectedIndex }) => {
   return (
     <>
       <li>
-        <a
+        <Link
+          to={title === "Home" ? "/" : "/" + title.toLowerCase()}
           onClick={() => {
             setSelectedIndex(index);
           }}
           className={index === selectedIndex ? "nav-link active" : "nav-link"}
           style={{ cursor: "pointer" }}>
           {title}
-        </a>
+        </Link>
       </li>
     </>
   );
