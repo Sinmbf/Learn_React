@@ -44,7 +44,7 @@ const TextForm = ({ heading, placeHolder, theme }) => {
   //Helper function to remove white spaces
   const removeExtraSpaces = () => {
     setText((currentText) => {
-      return currentText.split(/[ ]+/).join(" ");
+      return currentText.split(/\s+/).join(" ");
     });
     displayAlert("Removed all the extra spaces from the text");
   };
@@ -102,10 +102,11 @@ const TextForm = ({ heading, placeHolder, theme }) => {
           <p className="text-light fw-bold">
             Words:{" "}
             {
-              text
-                .replace(/\n/g, " ")
-                .split(" ")
-                .filter((value) => value != "").length
+              // text
+              //   .replace(/\n/g, " ")
+              //   .split(" ")
+              //   .filter((value) => value != "").length
+              text.split(/\s+/).filter((element) => element.length !== 0).length
             }
           </p>
           <p className="text-light fw-bold">

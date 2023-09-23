@@ -50,3 +50,7 @@
     flex-direction: row-reverse;
   }
 }
+
+.accordion-button::after {
+  filter: invert(1);
+}

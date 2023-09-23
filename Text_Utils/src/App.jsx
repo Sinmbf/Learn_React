@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./App.css";
+import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import TextForm from "./pages/TextForm";
-import { useState, useEffect } from "react";
 import AboutSection from "./pages/AboutSection";
 import Footer from "./components/Footer";
 import ThemeContainer from "./components/ThemeContainer";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -65,7 +65,6 @@ function App() {
       {/* Nav Bar */}
       <NavBar
         theme={theme}
-        setThemeColor={setThemeColor}
         title="TextUtils"
         selectedIndex={selectedIndex}
         setSelectedIndex={setSelectedIndex}

@@ -8,13 +8,13 @@ const AccordionItem = ({ title, text, index, theme }) => {
       }`}>
       <h2 className="accordion-header">
         <button
-          className={`accordion-button fw-bold ${
-            theme.backgroundColor === "black" && "bg-black text-light"
-          }`}
+          className={`fw-bold ${
+            index === 0 ? "accordion-button" : "accordion-button collapsed"
+          } ${theme.backgroundColor === "black" && "bg-black text-light"}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={`#collapse${index}`}
-          aria-expanded="true"
+          aria-expanded={`${index === 0} ? true:false`}
           aria-controls={`collapse${index}`}>
           {title}
         </button>
