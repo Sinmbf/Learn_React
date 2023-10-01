@@ -1,0 +1,188 @@
+{
+  "status": "ok",
+  "totalResults": 14,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-sport",
+        "name": "BBC Sport"
+      },
+      "author": null,
+      "title": "Livingston v Celtic & Saturday's Scottish football",
+      "description": "Champions Celtic kick off Saturday's Scottish Premiership games away to Livingston before more games at 15:00.",
+      "url": "http://www.bbc.co.uk/sport/live/football/66845743",
+      "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
+      "publishedAt": "2023-09-23T11:07:20.3060656Z",
+      "content": "Livingston: George, Obileye, Pittman, Anderson, Brandon, Holt, Nouble, Sangere, Shinnie, De Lucas, Penrice. \r\nSubstitutes: Hamilton, Parkes, Kelly, MacKay, Bradley, Kelly, Lloyd, Guthrie, Lawal.\r\nCel… [+180 chars]"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "CBS News",
+      "title": "How Coach Prime and the Colorado Buffaloes took over college football",
+      "description": "Deion Sanders and the Colorado Buffaloes have taken the college football world by storm this season and are quickly becoming the biggest story in all of sports. CBS Colorado anchor and reporter Justin Adams joins to discuss how Coach Prime brought the team to…",
+      "url": "https://www.cbsnews.com/video/how-coach-prime-colorado-buffaloes-took-over-college-football/",
+      "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2023/09/23/5d133288-4f89-47bd-b149-99575045fc3f/thumbnail/1200x630/b0daec796c3ca13228df361c732254ab/coach-prime.jpg?v=f5251b37272e6b1bc4e5456ab4445a67",
+      "publishedAt": "2023-09-23T00:57:00+00:00",
+      "content": "Watch CBS News\r\nCopyright ©2023 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On"
+    },
+    {
+      "source": {
+        "id": "fox-sports",
+        "name": "Fox Sports"
+      },
+      "author": "Joel Klatt",
+      "title": "Joel Klatt: What to expect in 'best slate of games we've had in years' in Week 4",
+      "description": "FOX Sports lead college football analyst Joel Klatt shared his thoughts on Ohio State-Notre Dame, Oklahoma-Cincinnati, Colorado-Oregon and more.",
+      "url": "http://www.foxsports.com/stories/college-football/joel-klatt-week-4-preview",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/09/1408/814/09.21.23_Klatt-Weekly-Preview_16x9.jpg?ve=1&tl=1",
+      "publishedAt": "2023-09-22T21:13:17Z",
+      "content": "The 2023 college football season officially begins this week, as this is the best slate of games we've had in years. \r\nThere are six ranked matchups on the Week 4 schedule and significant games in ea… [+12579 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Malak Saleh",
+      "title": "The NFL and Amazon are using AI to invent new football stats",
+      "description": "The National Football League is working with Amazon Web Services to create AI-powered algorithms that extract meaningful data from games and decipher...",
+      "url": "https://www.engadget.com/the-nfl-and-amazon-are-using-ai-to-invent-new-football-stats-173508576.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/WcqEZySN3RO4nAt5wzKcVg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/3e729980-5969-11ee-b9bf-a744fb7728eb",
+      "publishedAt": "2023-09-22T17:35:08Z",
+      "content": "The National Football League, like most professional sporting industries, is embracing artificial intelligence. Through a partnership with Amazon Web Services called Next Gen Stats, the NFL is hoping… [+4312 chars]"
+    },
+    {
+      "source": {
+        "id": "four-four-two",
+        "name": "FourFourTwo"
+      },
+      "author": "Ryan Dabbs",
+      "title": "Football boot wearable approved by FIFA - data tracking to be revolutionised with AI technology",
+      "description": "FIFA has allowed an AI data tracker to be used in official matches",
+      "url": "https://www.fourfourtwo.com/news/football-boot-wearable-approved-by-fifa-data-tracking-to-be-revolutionised-with-ai-technology",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/UB7LYBbTvAfna5hsR8V84N-1200-80.jpg",
+      "publishedAt": "2023-09-22T15:03:46Z",
+      "content": "An AI wearable technology for football boots has been approved by FIFA for use in official matches, revolutionising the way players can track their technical and physical performance data.\r\nThe techn… [+2620 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John Blake",
+      "title": "Deion Sanders’ ‘audacious Blackness’ makes him the hero African Americans want right now",
+      "description": "College football has historically been led by White coaches who follow a conservative script. But Deion Sanders is bringing an unapologetically Black swagger to the sport.",
+      "url": "https://www.cnn.com/2023/09/21/sport/deion-sanders-black-football-colorado-blake-cec/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230921180921-02-deion-sander-black-culture-reaj-cowboy-hat.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-09-22T12:29:59Z",
+      "content": "After his teams first victory earlier this month, University of Colorado football coach Deion Sanders said something remarkable. He talked bluntly about racism and football in a way that few Black co… [+9569 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "David Kenyon",
+      "title": "Top 10 WR Performances of the 2023 CFB Season So Far",
+      "description": "While no individual player truly determines the outcome of any college football game, wide receivers can take over a day. Through three weeks of the 2023…",
+      "url": "https://bleacherreport.com/articles/10090317-top-10-wr-performances-of-the-2023-cfb-season-so-far",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1695307891/pxbvxuukxwlewgumjeu1.jpg",
+      "publishedAt": "2023-09-22T11:00:00Z",
+      "content": "Every touchdown is timely, based on the reality there is never a legitimately bad time to score points.\r\nJacolby George, nevertheless, had extra-super-great timing to help Miami upset then-No. 23 Tex… [+567 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Mike Clay",
+      "title": "Fantasy football Shadow Report - Key WR/CB matchups for NFL Week 3 - ESPN",
+      "description": "Find out which wide receivers to upgrade, downgrade and avoid for Week 3 in fantasy football by using a full cheat sheet that breaks down every WR vs. CB matchup.",
+      "url": "https://www.espn.com/fantasy/football/insider/story/_/id/38441075/fantasy-football-wide-receiver-cornerback-matchups-nfl-week-3",
+      "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0919%2Fr1226892_1296x729_16%2D9.jpg",
+      "publishedAt": "2023-09-21T21:22:00Z",
+      "content": "By utilizing our play-by-play data, we're able to identify defense schemes and where each wide receiver and cornerback lines up on each play. By tracking these WR/CB matchups, including potential sha… [+9954 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Adam Kramer",
+      "title": "B/R College Football 2023 Betting Locks with Adam Kramer: Week 4",
+      "description": "The vibes are simply immaculate. We have been gifted one of the greatest Saturdays in recent memory, one week after a wild and weird batch of results. As we…",
+      "url": "https://bleacherreport.com/articles/10090248-br-college-football-2023-betting-locks-with-adam-kramer-week-4",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1695243370/uhwwyduycnctq2muotz1.jpg",
+      "publishedAt": "2023-09-21T14:31:59Z",
+      "content": "Ken Murray/Icon Sportswire via Getty Images\r\nThe vibes are simply immaculate.\r\nWe have been gifted one of the greatest Saturdays in recent memory, one week after a wild and weird batch of results. As… [+1083 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "David Kenyon",
+      "title": "College Football 2023: Week 4 Predictions for Every Game",
+      "description": "It's on. Do you believe your favorite team can bring home a conference title in 2023? Week 4 is the widespread start of league play. Do you think a certain…",
+      "url": "https://bleacherreport.com/articles/10089490-college-football-2023-week-4-predictions-for-every-game",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_93,y_59,w_1703,h_1132,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1694713904/czopucxvlfotlvauxgvw.jpg",
+      "publishedAt": "2023-09-21T14:31:43Z",
+      "content": "Tyler ShoughJohn E. Moore III/Getty Images\r\nMaryland (3-0) at Michigan State (2-1), 3:30 p.m. ETPrediction: Maryland 38, Michigan State 17\r\nBYU (3-0) at Kansas (3-0), 3:30 p.m. ETPrediction: Kansas 2… [+1441 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-sports",
+        "name": "Fox Sports"
+      },
+      "author": "Michael Cohen",
+      "title": "Oklahoma football: How Andrel Anthony became a surprise star for Sooners",
+      "description": "After languishing at Michigan, speedy WR Andrel Anthony found a home at Oklahoma and became a crucial weapon in the Sooners' high-flying offense.",
+      "url": "http://www.foxsports.com/stories/college-football/oklahoma-football-how-andrel-anthony-became-a-surprise-star-for-sooners",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/09/1408/814/09.18.23_Andrel-Anthony-Column_16x9.jpg?ve=1&tl=1",
+      "publishedAt": "2023-09-21T13:57:26Z",
+      "content": "In late October 2021, as Michigan prepared for an undefeated showdown with rival Michigan State, wide receivers Daylen Baldwin and Andrel Anthony engaged in a post-practice discussion at Schembechler… [+8074 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-sports",
+        "name": "Fox Sports"
+      },
+      "author": null,
+      "title": "Oklahoma-Cincinnati, Colorado-Oregon, more: CFB Week 4 by the numbers",
+      "description": "Week 4 of the college football season features a loaded slate, highlighted by Oklahoma's Big 12 showdown against Cincinnati. Here are the numbers to know!",
+      "url": "http://www.foxsports.com/stories/college-football/cfb-week-4-by-the-numbers",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/09/1408/814/09.19.23_By-The-Numbers_16x9.jpg?ve=1&tl=1",
+      "publishedAt": "2023-09-20T19:40:06Z",
+      "content": "Week 3 of the college football\r\n season did not feature a particularly \"juicy\" slate, however there was plenty of excitement, including Colorado's thrilling 43-35 win over Colorado State\r\n in double … [+7375 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-sports",
+        "name": "Fox Sports"
+      },
+      "author": "Rob Rang",
+      "title": "NFL scouts will be watching Dillon Gabriel, Tommy Eichenberg, more in Week 4",
+      "description": "College football's Week 4 presents a loaded slate that will keep draft scouts busy. Here's who they'll be watching closely.",
+      "url": "http://www.foxsports.com/stories/college-football/nfl-scouts-will-be-watching-dillon-gabriel-tommy-eichenberg-more-in-week-4",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/09/1408/814/09.18.23_Top-prospects-scouts-will-be-watching-in-Week-4-CFB_16x9-1.jpg?ve=1&tl=1",
+      "publishedAt": "2023-09-20T18:34:59Z",
+      "content": "Watch Week 4 of the college football season like a professional scout with this handy viewing guide.\r\nWith all due respect to the quality football that has already been played this season, its all a … [+17323 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "Five famous people (and one cat) you didn't know have ESPNcricinfo profiles | ESPNcricinfo.com",
+      "description": "Why do a footballer, a Nobel laureate and a prime minister (no, not Imran Khan) find themselves in the ESPNcricinfo player database? | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29102695/five-famous-people-one-cat-know-espncricinfo-profiles",
+      "urlToImage": "https://a.espncdn.com/i/cricket/cricinfo/1221668_1296x1296.gif",
+      "publishedAt": "2020-04-27T07:20:43Z",
+      "content": "Why do a cat, a footballer, a Nobel laureate and a prime minister find themselves in the ESPNcricinfo database? Here are six player profiles you wouldn't have expected we had.\r\nPeter the catThe only … [+5504 chars]"
+    }
+  ]
+}
