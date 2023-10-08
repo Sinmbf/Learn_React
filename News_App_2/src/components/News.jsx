@@ -65,7 +65,7 @@ export default function News({ updateProgress }) {
     <>
       <div className="container">
         <div className="text-center text-danger mt-4">
-          <h2>Search For News</h2>
+          <h2 style={{ marginTop: "5rem" }}>Search For News</h2>
         </div>
         <div className="row justify-content-center">
           {/* Form */}

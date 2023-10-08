@@ -59,7 +59,7 @@ export default function News({ updateProgress, currentCategory }) {
     <>
       <div className="container">
         <div className="text-center text-danger mt-4">
-          <h2>
+          <h2 style={{ marginTop: "5rem" }}>
             {currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1)}{" "}
             - Top Headlines
           </h2>

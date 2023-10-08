@@ -11,7 +11,9 @@ export default function NavBar({
   const [active, setActive] = useState(true);
   const listItems = ["Home"];
   return (
-    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav
+      className="navbar fixed-top navbar-expand-lg bg-dark"
+      data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Fool&apos;s <span className="text-info">News</span>
