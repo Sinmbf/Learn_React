@@ -17,6 +17,10 @@ app.use(express.json());
 app.use('/api/auth', require("./routes/auth"))
 app.use('/api/notes', require("./routes/notes"))
 
+app.get("/api/auth/createuser", (req, res) => {
+    res.send("Hello Sinmbf")
+})
+
 app.listen(port, () => {
     console.log(`iNotebook backend listening on port https://inotebook-backend-beta.vercel.app`);
 })
