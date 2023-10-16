@@ -16,7 +16,6 @@ app.get("/",(req,res)=>{
 app.use(cors(
     {
         origin:"https://inotebook-frontend-three.vercel.app",
-        credentials:true
     }
 ));
 // Middleware to parse the  req body 
