@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 // MIddleware to fix the cors
 app.use(cors(
     {
-        origin:"https://inotebook-frontend-three.vercel.app",
+        origin:"https://inotebook-frontend-three.vercel.app/login",
     }
 ));
 // Middleware to parse the  req body 
