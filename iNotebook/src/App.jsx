@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { useState } from "react";
+import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import NoteState from "./context/NoteState";
+import Login from "./components/pages/Login";
+import SignUp from "./components/pages/SignUp";
+import Alert from "./components/Alert";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [alert, setAlert] = useState({ message: "", type: "" });
+  // Helper function to toggle alert
+  const toggleAlert = (message, type) => {
+    setAlert({
+      message,
+      type,
+    });
+    setTimeout(() => {
+      setAlert({ message: "", type: "" });
+    }, 1500);
+  };
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NoteState>
+        {/* Navigation Bar */}
+        <NavBar />
+        {/* Alert */}
+        <Alert
+          message={alert.message ? alert.message : null}
+          type={alert.type ? alert.type : null}
+        />
+
+        {/* Available Routes */}
+        <div className="container my-4">
+          <Routes>
+            <Route
+              path="/"
+              element={<Home toggleAlert={toggleAlert} alert={alert} />}
+            />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="/login"
+              element={<Login toggleAlert={toggleAlert} />}
+            />
+            <Route
+              path="/signup"
+              element={<SignUp toggleAlert={toggleAlert} />}
+            />
+          </Routes>
+        </div>
+      </NoteState>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
