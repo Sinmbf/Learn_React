@@ -79,6 +79,7 @@ router.post(
     }),
   ],
   async (req, res) => {
+    res.send("Login");
     // If there are errors then send a Bad request and display the errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
