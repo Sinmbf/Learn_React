@@ -8,7 +8,7 @@ const LoginForm = ({ toggleAlert }) => {
   // Helper function to handle submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = "https://inotebook-backend-beta.vercel.app/api/auth/login";
+    const url = "http://localhost:5000/api/auth/login";
     const response = await fetch(url, {
       method: "POST",
       headers: {
