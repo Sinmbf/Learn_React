@@ -9,12 +9,11 @@ const app = express();
 const port = 5000;
 
 // MIddleware to fix the cors
-// app.use(cors({
-//     origin: ["http://localhost:5173"],
-//     methods: ["POST", "GET"],
-//     credentials: true
-// }))
-app.use(cors())
+app.use(cors({
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true
+}))
 // Middleware to parse the  req body 
 app.use(express.json());
 
