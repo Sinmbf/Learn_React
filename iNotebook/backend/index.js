@@ -11,7 +11,7 @@ const port = 5000;
 // MIddleware to fix the cors
 app.use(cors({
     origin: [""],
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET","PATCH","DELETE"],
     credentials: true
 }))
 // Middleware to parse the  req body 
