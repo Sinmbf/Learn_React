@@ -13,11 +13,7 @@ app.get("/",(req,res)=>{
 })
 
 // MIddleware to fix the cors
-app.use(cors({
-    origin: ["https://inotebook-frontend-three.vercel.app"],
-    methods: ["POST", "GET","PATCH","DELETE"],
-    credentials: true
-}))
+app.use(cors());
 // Middleware to parse the  req body 
 app.use(express.json());
 
