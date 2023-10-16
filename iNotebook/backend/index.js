@@ -11,6 +11,9 @@ const port = 5000;
 app.get("/",(req,res)=>{
     res.send("Hello Sinmbf")
 })
+app.get("/login",(req,res)=>{
+    res.send("Login")
+})
 
 // MIddleware to fix the cors
 app.use(cors(
