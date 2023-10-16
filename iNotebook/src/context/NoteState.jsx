@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const NoteState = ({ children }) => {
   const [notes, setNotes] = useState([]);
-  const host = "http://localhost:5000";
+  const host = "https://inotebook-backend-beta.vercel.app";
 
   const fetchAllNotes = async () => {
     // API call
