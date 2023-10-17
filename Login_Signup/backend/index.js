@@ -8,10 +8,7 @@ const app = express();
 const port = 5000;
 
 // Middleware to fix cors
-// app.use(cors({
-//     origin:"",
-//     credentials:true
-// }));
+app.use(cors());
 app.get("/", (req, res) => {
     res.send("Hello Sinmbf")
 })
