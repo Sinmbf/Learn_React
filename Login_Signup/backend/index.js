@@ -8,13 +8,15 @@ const app = express();
 const port = 5000;
 
 // Middleware to fix cors
-app.use(cors({
-    origin: ["https://login-signup-frontend-lovat.vercel.app"],
-    methods: ["POST"],
-    credentials: true
-}));
+// app.use(cors({
+//     origin:"",
+//     credentials:true
+// }));
 app.get("/", (req, res) => {
     res.send("Hello Sinmbf")
+})
+app.get("/api/auth/login", (req, res) => {
+    res.send("Login Sinmbf")
 })
 // Middleware to parse req body
 app.use(express.json());
