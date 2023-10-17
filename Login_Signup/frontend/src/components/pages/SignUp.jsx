@@ -15,7 +15,8 @@ const SignUp = ({ displayAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, password } = credentials;
-    const url = "http://localhost:5000/api/auth/createuser";
+    const url =
+      "https://login-signup-backend-self.vercel.app/api/auth/createuser";
     const response = await fetch(url, {
       method: "POST",
       headers: {
