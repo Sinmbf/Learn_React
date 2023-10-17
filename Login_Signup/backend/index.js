@@ -9,7 +9,8 @@ const port = 5000;
 
 // Middleware to fix cors
 app.use(cors({
-    origin:"https://login-signup-frontend-lovat.vercel.app",
+    origin:["https://login-signup-frontend-lovat.vercel.app"],
+    methods:["POST"],
     credentials:true
 }));
 app.get("/", (req, res) => {
