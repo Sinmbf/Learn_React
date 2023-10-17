@@ -15,6 +15,9 @@ app.use(cors({
 app.get("/", (req, res) => {
     res.send("Hello Sinmbf")
 })
+app.get("/api/auth/login", (req, res) => {
+    res.send("Login Sinmbf")
+})
 // Middleware to parse req body
 app.use(express.json());
 
