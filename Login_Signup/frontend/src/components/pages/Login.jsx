@@ -10,7 +10,7 @@ const Login = ({ displayAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, password } = credentials;
-    const url = "https://login-signup-backend-self.vercel.app/api/auth/login";
+    const url = "http://localhost:5000/api/auth/login";
     const response = await fetch(url, {
       method: "POST",
       headers: {
