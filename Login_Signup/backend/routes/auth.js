@@ -6,9 +6,13 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const JWT_SECRET = "SinmbfLost";
 const fetchUser = require("../middleware/fetchUser");
-
+const cors = require("cors")
 const { body, validationResult } = require("express-validator");
 
+router.use(cors({
+    origin: "",
+    credentials: true
+}));
 // ROUTE 1:Create a user using POST: /api/auth/login. No login required
 router.post("/createuser", [
     body("name", "Please enter a valid name with at least 3 characters").isLength({ min: 3 }).escape(),

@@ -6,11 +6,12 @@ const Login = ({ displayAlert }) => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const host = "https://login-signup-backend-silk.vercel.app";
   // Helper function to handle Submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, password } = credentials;
-    const url = "http://localhost:5000/api/auth/login";
+    const url = `${host}/api/auth/login`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
