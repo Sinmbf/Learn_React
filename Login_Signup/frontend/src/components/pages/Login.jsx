@@ -6,7 +6,7 @@ const Login = ({ displayAlert }) => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const host = "https://login-signup-backend-silk.vercel.app";
+  const host = "http://localhost:5000";
   // Helper function to handle Submit
   const handleSubmit = async (e) => {
     e.preventDefault();

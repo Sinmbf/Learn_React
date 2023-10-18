@@ -15,7 +15,7 @@ const SignUp = ({ displayAlert }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, password } = credentials;
-    const host = "https://login-signup-backend-silk.vercel.app";
+    const host = "http://localhost:5000";
     const url = `${host}/api/auth/createuser`;
     const response = await fetch(url, {
       method: "POST",
