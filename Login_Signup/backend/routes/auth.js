@@ -10,7 +10,7 @@ const cors = require("cors")
 const { body, validationResult } = require("express-validator");
 
 router.use(cors({
-    origin: "",
+    origin: "https://login-signup-fronend.vercel.app",
     credentials: true
 }));
 // ROUTE 1:Create a user using POST: /api/auth/login. No login required
