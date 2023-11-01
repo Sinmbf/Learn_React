@@ -91,7 +91,8 @@ const NoteState = ({ children }) => {
 
   return (
     <NoteContext.Provider
-      value={{ notes, fetchAllNotes, addNote, deleteNote, editNote }}>
+      value={{ notes, fetchAllNotes, addNote, deleteNote, editNote }}
+    >
       {children}
     </NoteContext.Provider>
   );
